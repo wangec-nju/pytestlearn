@@ -5,7 +5,7 @@ class HelloTest:
     @pytest.mark.parametrize("name",["NOVA","NJU","CAC"])
     def test_get_name(self,name):
         instance = Hello(name)
-        assert instance.get_name() in ["NOVA","CAC"]
+        assert instance.get_name() == name
     
     @pytest.mark.parametrize("name",["NOVA","NJU","CAC"])
     def test_set_name(self,name):

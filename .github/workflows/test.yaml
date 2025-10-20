@@ -1,7 +1,14 @@
 name: Test
 on: 
-- push
-- pull-request
+  push:
+    branches: ["main","dev"]
+    paths:
+    - "**.py"
+  pull_request:
+    branches: ["main"]
+    paths:
+    - "**.py"
+
 
 jobs:
   test:
