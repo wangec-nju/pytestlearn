@@ -5,3 +5,4 @@ __pycache__/
 .coverage
 coverage.xml
 coverage_report/
+test_report.xml
