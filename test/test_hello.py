@@ -17,6 +17,3 @@ class HelloTest:
     def test_say(self,name):
         instance = Hello(name)
         instance.say()
-    
-if __name__ == "__main__":
-    print("Damn!")
